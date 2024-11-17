@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+<body>
+    <header id="top">
+        <%- include('partials/header', { user: user }) %>
+    </header>
+
+    <main id="detalle-pelicula">
+        <h1><%= pelicula.nombre %></h1>
+        <div class="detalle-pelicula">
+            <div class="imagen">
+                <img src="http://localhost:3000/images/<%= pelicula.imagen %>" alt="<%= pelicula.nombre %>">
+
+            </div>
+            <div class="info">
+                <p><strong>Fecha:</strong> <%= pelicula.date %></p>
+                <p><strong>Estado:</strong> <%= pelicula.estado %></p>
+                <p><strong>Formato:</strong> <%= pelicula.formato %></p>
+            </div>
+        </div>
+        <a href="/coleccion" class="btn">Volver a la colección</a>
+    </main>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="logo">
+    <img src="/images/PelisPelis.png" alt="Logo">
+</div>
+
+<nav class="menu">
+    <div class="links">  
+        <a href="/">INICIO</a>
+        <a href="/soporte">SOPORTE</a>
+    </div>
+
+    <% if (user) { %>
+        <span class="user"><%= user.username %></span>
+        <button class="btn-register" onclick="location.href='/logout'">LOGOUT</button>
+    <% } else { %>
+        <button class="btn-login" onclick="location.href='/login'">INICIAR SESIÓN</button>
+        <button class="btn-register" onclick="location.href='/register'">REGISTRO</button>
+    <% } %>
+</nav>

@@ -1,0 +1,100 @@
+main#soporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+
+    .support-container {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        background-color: var(--background-color2); 
+        border-radius: 0.625rem;
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+        width: 70rem; 
+        color: white;
+    }
+    
+    form {
+        width: 35%; 
+    }
+    
+    .support-info {
+        width: 65%; 
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    p, ul, li {
+        font-size: 1.2rem;
+    }
+    
+    .input-group {
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 0.625rem;
+        text-align: left;
+    }
+    
+    input[type="email"],
+    select,
+    textarea {
+        width: 85%;
+        padding: 0.9375rem;
+        border: 1px solid #ccc;
+        border-radius: 0.9375rem;
+        box-sizing: border-box;
+        background-color: #333; 
+        color: white;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    button.btn-send {
+        width: 85%;
+        padding: 0.9375rem;
+        background-color: var(--primary-color1);
+        color: white;
+        border: none;
+        border-radius: 0.9375rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 1.875rem;
+    }
+    
+    button.btn-send:hover {
+        background-color: rgb(243, 125, 243); 
+    }
+    
+    a {
+        color: var(--primary-color2);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .details {
+        margin-top: 2.8rem;
+        font-size: 0.775rem;
+        text-align: center;
+        color: lightgray;
+    }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+<body>
+    <header id="top">
+        <%- include('partials/header', { user: user }) %>
+    </header>
+    
+
+    <main id="home">
+        <div id="contenedor1">
+            <h2>Bienvenido a tu colección de películas</h2>
+            <p>Explora las últimas películas añadidas, gestiona tu colección a tu gusto, añade, elimina, edita...</p>
+            <button class="btn-coleccion" onclick="location.href='/coleccion'">MI COLECCION</button>
+        </div>
+        <div id="contenedor2">
+            <button class="btn-carrusel prev">&lt;</button>
+            <div class="contenido">
+                <div class="galeria">
+                   
+                </div>
+            </div>
+            <button class="btn-carrusel next">&gt;</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+    
+     <script src="javascripts/front.js"></script>
+</body>
+</html>

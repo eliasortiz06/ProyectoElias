@@ -1,0 +1,90 @@
+main#detalle-pelicula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+
+    .detalle-pelicula {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+        padding: 20px;
+        width: 80%;
+        max-width: 900px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    }
+    
+    .detalle-pelicula .imagen img {
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    }
+    
+    .detalle-pelicula .info {
+        text-align: left;
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    .detalle-pelicula .info p {
+        font-size: 18px;
+        margin: 8px 0;
+        color: #ddd;
+    }
+    
+    .detalle-pelicula .info p strong {
+        color: #fff;
+    }
+    
+    h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    a.btn {
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+    
+    a.btn:hover {
+        background-color: #0056b3;
+    }
+    
+    button {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button.save {
+        background-color: #ff69b4;
+        color: white;
+    }
+    
+    button.save:hover {
+        background-color: #ff1493;
+    }
+    
+    button.delete {
+        background-color: #ff4d4d;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    button.delete:hover {
+        background-color: #ff0000;
+    }
+}

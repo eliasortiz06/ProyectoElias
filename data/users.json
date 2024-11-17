@@ -1,0 +1,72 @@
+[
+    {
+        "email": "elias@gmail.com",
+        "password": "1234",
+        "username": "Elias",
+        "coleccion": [
+            {
+                "id": "1",
+                "nombre": "Interestellar",
+                "date": "Updated today",
+                "imagen": "images/interestellar.jpg",
+                "estado": "bueno",
+                "formato": "DVD"
+            },
+            {
+                "id": "2",
+                "nombre": "Alien",
+                "date": "Updated today",
+                "imagen": "images/alien.webp",
+                "estado": "dañado",
+                "formato": "Blu-Ray"
+            },
+            {
+                "id": "5",
+                "nombre": "Shingueki",
+                "date": "Updated today",
+                "imagen": "images/shingueki.jpg",
+                "estado": "bien",
+                "formato": "Digital"
+              },
+              {
+                "id": "6",
+                "nombre": "Shrek",
+                "date": "Updated today",
+                "imagen": "images/shrek.jpg",
+                "estado": "dañado",
+                "formato": "VHS"
+              }
+        ]
+    },
+    {
+        "email": "mariano@gmail.com",
+        "password": "1234",
+        "username": "Mariano",
+        "coleccion": [
+            {
+                "id": "3",
+                "nombre": "InsideOut",
+                "date": "Updated today",
+                "imagen": "images/insideout.jpg",
+                "estado": "bien",
+                "formato": "Blu-Ray"
+            },
+            {
+                "id": "4",
+                "nombre": "Mulan",
+                "date": "Updated today",
+                "imagen": "images/mulan.jpg",
+                "estado": "dañado",
+                "formato": "VHS"
+            },
+            {
+                "id": "5",
+                "nombre": "Shingueki",
+                "date": "Updated today",
+                "imagen": "images/shingueki.jpg",
+                "estado": "bien",
+                "formato": "Digital"
+              }
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+<body>
+    <header id="top">
+        <%- include('partials/header', { user: user }) %>
+      </header>
+    <main id="soporte">
+        <div class="support-container">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Asunto:</label>
+                    <select id="subject" name="subject">
+                        <option value="soporte">Soporte</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Descripción del problema:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-send">Enviar</button>
+            </form>
+    
+            <div class="support-info">
+                <h2>¿Necesitas ayuda? Estamos aquí para ti</h2>
+                <p>
+                    En PelisPelis queremos que tu experiencia sea lo más sencilla y fluida posible. Si tienes alguna duda, problema técnico o consulta, no dudes en ponerte en contacto con nosotros.
+                </p>
+                <p>Ofrecemos varias formas de soporte para que elijas la que mejor te convenga:</p>
+                <ul>
+                    <li>Formulario de contacto: Completa el formulario a continuación y te responderemos lo antes posible.</li>
+                    <li>Correo electrónico: Puedes escribirnos directamente a <a href="mailto:soporte@pelispelis.com">soporte@pelispelis.com</a></li>
+                    <li>Preguntas frecuentes (FAQ): Consulta nuestra sección de <a href="#">Preguntas Frecuentes</a> para obtener respuestas rápidas a las consultas más comunes.</li>
+                </ul>
+                <p class="details">**Por favor, proporciona todos los detalles posibles sobre tu consulta para que podamos ayudarte de manera eficiente**</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

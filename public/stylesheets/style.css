@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("vars.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("login.css");
+@import url("soporte.css");
+@import url("coleccion.css");
+@import url("detalle.css");
+
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color-header);
+}
+
+main#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.625rem 1.25rem;
+    gap: 1.25rem;
+    margin-top: 6rem;
+  
+  #contenedor1 {
+    width: 42%;
+    margin-left: 2.1875rem;
+    margin-top: 4rem;
+  }
+  
+  #contenedor1 h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 2.1875rem;
+    color: white;
+  }
+  
+  #contenedor1 p {
+    font-size: 2rem;
+    margin-bottom: 2.8125rem;
+    color: #ddd;
+    margin-right: 1.25rem;
+  }
+  
+  .btn-coleccion {
+    display: block;
+    padding: 1.25rem 2.5rem;
+    background-color: var(--primary-color1);
+    color: white;
+    border: none;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .btn-coleccion:hover {
+    background-color: #ff78bf;
+    transform: scale(1.1);
+  }
+  
+  #contenedor2 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.1875rem;
+    background-color: var(--background-color2);
+    border-radius: 2.5rem;
+    margin-top: 10rem;
+    margin-right: 2.5rem;
+    border: 2px solid var(--primary-color2);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .galeria {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .pelicula {
+    min-width: 100%;
+    text-align: center;
+  }
+  
+  .galeria img {
+    width: 100%;
+    max-width: 8.125rem;
+    height: 12.5rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .pelicula img:hover {
+    border-radius: 0.9375rem;
+    margin: -0.3125rem;
+    box-shadow: 0 0 0.9375rem rgba(105, 105, 105, 0.6);
+  }
+  
+  .pelicula p.subtitulo {
+    color: #aaa;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+  
+  .btn-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10; 
+  }
+  
+  .btn-carrusel.prev {
+    left: 1rem;
+  }
+  
+  .btn-carrusel.next {
+    right: 1rem;
+  }
+}
